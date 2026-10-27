@@ -506,3 +506,4 @@ html[data-theme='dark']:lang(km) { --font-body: 'Noto Sans Khmer', sans-serif; -
   html[data-theme='dark'] .project-placeholder, html[data-theme='dark'] .project-placeholder-2 { margin: 17px 0 0; min-height: 215px; }
   html[data-theme='dark'] .project-body { padding: 20px 0; }
 }
+

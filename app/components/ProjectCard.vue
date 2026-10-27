@@ -15,7 +15,7 @@ defineProps<{
 }>()
 
 const khmerDescriptions: Record<string, string> = {
-  'A school website with navigation, course information, and a welcome section. Uses MongoDB and is deployed on Vercel.': 'វេបសាយសាលាដែលមានម៉ឺនុយ ព័ត៌មានវគ្គសិក្សា និងផ្នែកស្វាគមន៍។ ប្រើ MongoDB និងដាក់ឱ្យដំណើរការលើ Vercel។',
+  'A teacher-assigned thesis project that I developed myself: a school website with navigation and course information, built with MongoDB and deployed on Vercel.': 'គម្រោងសារណាដែលគ្រូបានដាក់ឱ្យធ្វើ ហើយខ្ញុំបានអភិវឌ្ឍដោយខ្លួនឯង៖ ជាវេបសាយសាលាដែលមានម៉ឺនុយ និងព័ត៌មានវគ្គសិក្សា ប្រើ MongoDB និងដាក់ឱ្យដំណើរការលើ Vercel។',
   'A desktop application for managing students, classes, and attendance.': 'កម្មវិធីកុំព្យូទ័រសម្រាប់គ្រប់គ្រងសិស្ស ថ្នាក់រៀន និងវត្តមាន។',
 }
 </script>

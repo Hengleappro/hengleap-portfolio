@@ -33,7 +33,7 @@ const copy = computed(() => language.value === 'km' ? {
   location: 'Based in', greeting: 'Hello, I’m', role: profile.role, locationName: profile.location, introduction: profile.introduction, github: 'Visit GitHub', projectsButton: 'View projects',
   heroNote: 'Learning every day. Building one useful thing at a time.', scroll: 'Scroll to explore',
   about: 'About me', aboutTitle: 'Curious by nature.', aboutSubtitle: 'Focused on what’s next.',
-  aboutFirst: 'I have always enjoyed exploring computers, phones, and the internet. That curiosity led me to study IT, including computer science at the National Wisdom University (សាកលវិទ្យាល័យបញ្ញាជាតិ).',
+  aboutFirst: 'I have always enjoyed exploring computers, phones, and the internet. That curiosity led me to study IT. I studied computer science at Panha Chiet University (PCU).',
   aboutSecond: 'A turning point came in 2023, when I started working at GTC Computer. The experience introduced me to a range of electronic devices and gave me time to continue studying IT. It strengthened my interest in learning more and developing my skills in IT.',
   education: 'Education', graduated: 'Graduated', skills: 'Skills', skillsTitle: 'Tools I use', skillsSubtitle: 'and keep learning.',
   skillsIntro: 'A practical mix of web technologies, desktop development, and hands-on troubleshooting.',
@@ -94,14 +94,14 @@ useSeoMeta({
           </div>
           <p class="hero-note">{{ copy.heroNote }}</p>
         </div>
-        <div class="hero-visual" aria-label="Hengleap Lim initials artwork" role="img">
+        <div class="hero-visual" :aria-label="language === 'km' ? `កាតអក្សរកាត់របស់ ${profile.khmerFullName}` : `${profile.name} initials artwork`" role="img">
           <div class="visual-grid"></div>
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
-          <div class="initials-card"><span>PORTFOLIO / 2026</span><strong>HL</strong><small>IT · WEB · SUPPORT</small></div>
+          <div class="initials-card"><span>PORTFOLIO / {{ profile.graduationYear }}</span><strong>HL</strong><small>IT · WEB · SUPPORT</small></div>
           <span class="visual-cross cross-one" aria-hidden="true">+</span>
           <span class="visual-cross cross-two" aria-hidden="true">+</span>
-          <span class="visual-caption">PHNOM PENH, CAMBODIA <span>11°33' N</span></span>
+          <span class="visual-caption">{{ language === 'km' ? 'ភ្នំពេញ ប្រទេសកម្ពុជា' : 'PHNOM PENH, CAMBODIA' }} <span>11°33' N</span></span>
         </div>
         <a class="hero-scroll" href="#about"><span></span> {{ copy.scroll }}</a>
       </section>
